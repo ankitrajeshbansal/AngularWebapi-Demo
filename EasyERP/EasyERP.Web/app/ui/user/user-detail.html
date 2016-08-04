@@ -1,0 +1,51 @@
+﻿<div class="modal-dialog" >
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">User form</h4>
+        </div>
+        <form role="form" id="UserForm" name="UserForm" novalidate>
+            <div class="modal-body">
+
+                <input type="hidden" ng-model="vm.User.Id" />
+                <input type="hidden" ng-model="vm.User.IsActive" />
+                <input type="hidden" ng-model="vm.User.CreatedDate" />
+                <input type="hidden" ng-model="vm.User.Token" />
+                <input type="hidden" ng-model="vm.User.LastLoginDate" />
+                <div class="form-group">
+                    <label>Name</label>
+                    <input class="form-control" ng-model="vm.User.Name" type="text" name="Name" required>
+                    <p class="help-block has-error" ng-show="UserForm.Name.$invalid && !UserForm.Name.$pristine">Please enter name</p>
+                </div>
+                <div class="form-group">
+                    <label>DOB</label>
+                    <input class="form-control" ng-model="vm.User.DOB" type="date" name="Date" required>
+                    <p class="help-block has-error" ng-show="UserForm.DOB.$invalid && !UserForm.DOB.$pristine">Please select valid date</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Address</label>
+                    <textarea class="form-control" rows="3" ng-model="vm.User.Address"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input class="form-control" ng-model="vm.User.Username" name="Username" type="email" required>
+                    <p class="help-block has-error" ng-show="UserForm.Username.$invalid && !UserForm.Username.$pristine">Please enter valid email id</p>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input class="form-control" ng-model="vm.User.Password" type="password" name="Password" required>
+                    <p class="help-block has-error" ng-show="UserForm.Password.$invalid && !UserForm.Password.$pristine">Please enter password</p>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" ng-disabled="UserForm.$invalid || UserForm.$pristine" ng-click="vm.submitUser(UserForm)">Save changes</button>
+                <!---->
+            </div>
+        </form>
+    </div>
+    <!-- /.modal-content -->
+</div>

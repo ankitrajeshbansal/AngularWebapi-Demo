@@ -1,0 +1,32 @@
+﻿    <div class="container" ng-controller="loginCtrl as vm">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Please Sign In</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" name="LoginForm" novalidate>
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="E-mail" name="Email" type="email" autofocus="" ng-model="vm.email">
+                                    <p ng-show="LoginForm.Email.$invalid && !LoginForm.Email.$pristine" class="help-block has-error">Please enter a valid email</p>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="Password" type="password" value="" ng-model="vm.password">
+                                    <p ng-show="!LoginForm.Password.$valid && !LoginForm.Password.$pristine" class="help-block">Please enter password</p>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                                    </label>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <button class="btn btn-lg btn-success btn-block" ng-click="vm.submit()" ng-disabled="LoginForm.$invalid || LoginForm.$pristine">Login</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

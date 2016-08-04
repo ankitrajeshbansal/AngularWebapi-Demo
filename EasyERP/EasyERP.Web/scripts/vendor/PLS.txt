@@ -1,0 +1,35 @@
+1. Attendance
+            a. Bar code/ Punching card
+               We can manage the checkin/ checkout time for using system.
+               Manual attendance
+            b. Leave mangement
+               Teacher write some about the leave and mark as infomed or not informed.
+               Parent also can be mark as leave with giving some notes and teacher will approve or not.
+               Mail and sms also be send to class teacher and parent.
+               Teacher and parent also upload the document regarding leave like snap of leave request application/ illness proff
+            c. Reports
+               By student/ by class and whole school as well.
+			d. Holidays
+2. User Type
+            a. Admin/Teacher/Parent
+3. Registration
+            a. Student / Teacher
+			b. bluk registration using excel import.
+4. Result and examination
+            a. Schdule the exams and create the exam list
+            b. Teachers can create an exam for student and upload the document.
+            c. Admin will get the question from suggested question and create new one for student
+            d. Upload / Download the pdf word files
+            e. Student results send to parent in e-format.			
+5. Fee
+			a. Online payment if needed/ Parent will pay student fees.
+			b. Manage the fee and various type of report according to fee
+			c. Send alert mail or sms to parent for fee
+6. Period arrangement
+			a. TEacher leave system
+				Request to admin for leave and admin can approve/ disapprove the leave.
+				Same as student point of view add documents and comment regarding this.
+			b. Period arrangment 
+				in the absance/leave for teacher period management 
+			c. Class time table
+7. Dashboard
